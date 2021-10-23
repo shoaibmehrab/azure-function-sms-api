@@ -44,7 +44,7 @@ namespace AfSmsApi
             var res = req.CreateResponse(HttpStatusCode.OK);
             res.Headers.Add("Content-Type", "text/plain; charset=utf-8");
 
-            res.WriteString($"Hello {name} from azure function.");
+            res.WriteString($"Hello {name} from azure function."); 
 
             return res;
         }
